@@ -3,6 +3,7 @@ import axios from "axios";// in order to make Rest APIs
 // library. we are using xios for this
 
 const REST_API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+console.log('VITE_API_BASE_URL:', import.meta.env.VITE_API_BASE_URL);
 
 export const listEmployees = () => axios.get(REST_API_BASE_URL);// called from ListEmployeeComponent
 
