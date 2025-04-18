@@ -62,7 +62,7 @@ public class employeeController {
 
     // Build Get all Employees REST API
     @GetMapping()
-    public ResponseEntity<List<employeeDto>> getAllEmployees() {
+    public ResponseEntity<?> getAllEmployees() {
         List<employeeDto> employees = EmployeeService.getAllEmployees();
         if (employees.isEmpty()) {
         Map<String, String> response = new HashMap<>();
